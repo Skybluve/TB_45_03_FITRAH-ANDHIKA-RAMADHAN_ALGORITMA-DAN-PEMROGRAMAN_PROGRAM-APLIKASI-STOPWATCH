@@ -6,7 +6,7 @@ import time
 # menggunakan class StopWatch dan menginheritence dari class Frame
 class StopWatch(Frame):
     
-   # metode ‘print_Teks’
+   # menggunakan metode ‘print_Teks’
     def print_Teks(self):
         #membuat label dengan settingan dan ukuran yang sudah saya tentukan. Ini untuk menampilkan angka angka stopwatch
         self.teks = Label(self, textvariable=self.waktu_String,font="Times 19 bold", bg='light green', fg='blue')
@@ -16,7 +16,7 @@ class StopWatch(Frame):
         #memasukkan teks angka stopwatch kedalam window
         self.teks.grid(row=0, column=0)
         
-    # metode ‘update’ untuk memperbarui waktu stopwatch
+    # menggunakan metode ‘update’ untuk memperbarui waktu stopwatch
     def update(self):
         #  mendapatkan waktu terkini
         self.waktu_terkini = time.time() - self._start 
